@@ -1,0 +1,113 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* CSS reset */
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+   transition: all 0.3s ease-in-out;
+}
+*, *:before, *:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html, body{
+	height: 100%;
+	width: 100%;
+	font-style: 100%;
+	line-height: 1.5;
+	font-style: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+   font-family: 'Manrope', sans-serif;
+}
+
+.wrap {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+input, button, textarea{font-family: inherit;}
+
+input::-ms-clear{display:none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style-type: none;}
+img{vertical-align: top;}
+
+h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
+
+/* HEADER */
+
+.wrap {
+   position: relative;
+}
+.circle {
+   position: absolute;
+   top: -100%;
+   right: calc(-50% + 54px);
+   width: 1293px;
+   height: 1293px;
+   background-color: #1C3D5B;
+   border-radius: 50%;
+   z-index: 1;
+}
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 56px 100px 0 100px;
+   background-color: #0A2640;
+}
+.logo {
+   display: flex;
+   align-items: center;
+   font-size: 43.25px;
+   font-weight: 700;
+   color: #ffffff;
+   gap: 11px;
+   line-height: 33.64px;
+}
+.nav {
+   z-index: 2;
+}
+.nav__list {
+   display: flex;
+   align-items: center;
+   gap: 40px;
+}
+.nav__item {
+}
+.nav__link {
+   color: #ffffff;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 600;
+   line-height: 28px;
+   letter-spacing: 0%;
+}
+.login {
+   border-radius: 24px;
+   border: 2px solid #ffffff;
+   background-color: #fff;
+   color: #0A2640;
+   padding: 8px 40px;
+   font-weight: 700;
+   -webkit-border-radius: 24px;
+   -moz-border-radius: 24px;
+   -ms-border-radius: 24px;
+   -o-border-radius: 24px;
+}
